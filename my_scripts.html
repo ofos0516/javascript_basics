@@ -1,0 +1,19 @@
+<body>
+  <div id="content"></div>
+  <button onclick="MyFunc(3, 6, 9)">Spausk</button>
+  <script>
+    function myFunc(a, b, c) {
+      return a + b + c
+    }
+
+    const result = myFunc(3, 6, 9)
+
+    alert(result)
+    if (a > 10 && b > 20 && c < 90) {
+      document.getElementByID("content").innerHTML = result
+    } else {
+      document.getElementById("content").innerHTML =
+        '<span style = "color:red">Skačiai neatitinka reikalavimų</span>'
+    }
+  </script>
+</body>
